@@ -2,10 +2,11 @@ def display_main_menu():
     print("Welcome to your To Do List ")
     print("1. Task Management ")
     print("2. Task Display ")
+
 display_main_menu()   
 option = input("What option would you like to choose? ")
 
-tasks = ["clean dishes", "clean room "]
+tasks = []
 
 if option == "1":
     print("Add tasks ")
@@ -13,7 +14,9 @@ if option == "1":
     tasks.append(task)
 if option == "2":
     print(tasks)
-tasks = []
+
+
+
 while True:
     display_main_menu()
     option = input("What option would you like to choose? ")
